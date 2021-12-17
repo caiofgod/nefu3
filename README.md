@@ -1,9 +1,13 @@
-#感谢Eric学长的大力支持 Github：https://github.com/ErjianGao
-jdk11  tomcat 9.0.52
+###感谢Eric学长的大力支持 Github：https://github.com/ErjianGao
+#jdk11  
+#tomcat 9.0.52
 
 
 # Web开发技术项目设计
 
+#数据库：
+![img.png](img.png)
+![img_1.png](img_1.png)
 ### 项目要求
 基于HTML/CSS/JS/Servlet/JDBC等技术完成以下设计内容  
 允许并鼓励使用Bootstrap/easy-ui/flat-ui等UI框架，及轮播/动画/图表/全屏滚动等等插件  
