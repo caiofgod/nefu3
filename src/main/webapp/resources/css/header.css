@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    min-width: 1480px;
+}
+
+body {
+    background-color: #00c292;
+}
+
+.header {
+    height: 100vh;
+    box-shadow: 0 0px 30px #484848 inset;
+    position: relative;
+}
+
+/*logo和导航*/
+.navwrapper {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+}
+
+/*logo*/
+.navwrapper .logo {
+    display: flex;
+}
+
+.navwrapper .logo img {
+    margin: 50px 0;
+    margin-left: 50px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navwrapper .logo .solfware-img {
+    margin-top: 45px;
+    margin-left: 0;
+}
+
+/*导航*/
+.navwrapper .nav {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .navwrapper .nav ul{
+    list-style-type: none;
+}
+
+
+.header .navwrapper .subnav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header .navwrapper .subnav ul {
+    margin-right: 100px;
+    display: flex;
+}
+
+.header .navwrapper .subnav ul a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: whitesmoke;
+    padding: 10px 20px;
+}
+
+
+/*主导航*/
+.header .navwrapper .mainnav {
+    display: flex;
+    padding: 0 20px;
+    margin: 15px 10px;
+    font-size: 18px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.dropdown>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+}
+
+.dropdown ul li a:hover {
+    background: rgba(232, 232, 232, 0.85);
+}
+
+
+/*下拉菜单*/
+.dropdown {
+    /*容器必须显式声明相对定位*/
+    position: relative;
+    /*由于block横向占据全行，所以使用inline-block*/
+    display: inline-block;
+}
+
+.dropdown .dropdown-menu {
+    /*基于下拉容器的绝对定位,可以覆盖在其他内容之上*/
+    border-radius: 0;
+    /*position: absolute;*/
+    top: 59px;
+    left: -1px;
+    padding: 0;
+    /*下拉内容不占据空间*/
+    display: none;
+    opacity: 80%;
+}
+.dropdown:hover > a{
+    color: rgb(0, 194, 146);
+    background-color: rgba(255, 255, 255, 0.85);
+    border-top: 4px solid #00c292;
+    transition-duration: 250ms;
+}
+
+
+.dropdown-menu a {
+    display: block;
+    width: 210px;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #00c292;
+    background-color: white;
+}
+
+/*轮播图样式*/
+.header .carousel {
+    overflow: hidden;
+    /*position: fixed;*/
+    /*z-index: -2000;*/
+    width: 100vw;
+}
+
+.header .carousel-item {
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    position: fixed;
+    z-index: -100;
+}
+
+.header .carousel-inner img {
+    width: 100%;
+}
+
+/*.carousel-control-next, .carousel-control-prev {*/
+/*    position: fixed;*/
+/*}*/
+
+/*.carousel-control-next, .carousel-control-next {*/
+/*    position: fixed;*/
+/*}*/
+
+/*指示符样式*/
+/*.carousel-indicators {*/
+/*    position: fixed;*/
+/*    bottom: 100px;*/
+/*}*/
+
+/*锚点导航*/
+a.more-info {
+    padding: 2px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    background: #00785a;
+    position: absolute;
+    bottom: 0;
+    font-size: 40px;
+    color: white;
+    box-shadow: 0 -25px 25px rgba(0,0,0,0.3);
+}
+
+i.material-icons {
+    font-size: 30px;
+}

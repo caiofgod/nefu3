@@ -1,0 +1,16 @@
+
+article h3 {
+    text-align:center
+
+}
+article p {
+    text-indent:2em;
+
+}
+body{
+    background-image: url("../../resources/images/webp.jpg");
+
+    background-attachment:fixed;
+    background-repeat:repeat-x;
+
+}
